@@ -11,6 +11,16 @@
   --md-accent-fg-color: var(--mf-green);
 }
 
+html,
+body,
+.md-container,
+.md-main,
+.md-main__inner,
+.md-content {
+  background-color: var(--mf-white);
+  color-scheme: light;
+}
+
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   height: 2rem;
