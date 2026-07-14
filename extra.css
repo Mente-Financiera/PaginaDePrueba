@@ -11,54 +11,6 @@
   --md-accent-fg-color: var(--mf-green);
 }
 
-[data-md-color-scheme="slate"] {
-  color-scheme: light;
-  --mf-petrol: #1f4e5f;
-  --mf-green: #5e9c76;
-  --mf-white: #ffffff;
-  --mf-light: #f5f7f8;
-  --mf-ink: #17313a;
-  --mf-soft-line: rgba(31, 78, 95, 0.14);
-  --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #17313a;
-  --md-default-fg-color--light: rgba(23, 49, 58, 0.72);
-  --md-default-fg-color--lighter: rgba(23, 49, 58, 0.42);
-  --md-default-fg-color--lightest: rgba(23, 49, 58, 0.16);
-  --md-typeset-color: #17313a;
-  --md-typeset-a-color: var(--mf-petrol);
-  --md-code-bg-color: #f5f7f8;
-  --md-code-fg-color: #17313a;
-  --md-primary-fg-color: var(--mf-petrol);
-  --md-primary-fg-color--light: #2d6b7f;
-  --md-primary-fg-color--dark: #143642;
-  --md-accent-fg-color: var(--mf-green);
-}
-
-html,
-body,
-.md-container,
-.md-main,
-.md-main__inner,
-.md-content {
-  background-color: var(--mf-white);
-  color: var(--mf-ink);
-  color-scheme: light;
-}
-
-.md-content__inner,
-.md-sidebar,
-.md-sidebar__scrollwrap,
-.md-nav,
-.md-nav__list {
-  background-color: var(--mf-white);
-}
-
-.md-typeset,
-.md-typeset p,
-.md-typeset li {
-  color: var(--mf-ink);
-}
-
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   height: 2rem;
@@ -77,18 +29,8 @@ body,
 }
 
 .md-typeset .md-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0.65em 1em;
   border-radius: 0.45rem;
   font-weight: 700;
-  line-height: 1.25;
-  text-align: center;
-  white-space: normal;
 }
 
 .md-typeset .md-button--primary {
@@ -131,18 +73,11 @@ body,
 .mf-hero__content > p:has(.md-button) {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   gap: 0.65rem;
 }
 
 .mf-hero__content > p:has(.md-button) .md-button {
-  flex: 0 0 auto;
-  width: max-content;
   margin: 0;
-}
-
-.mf-callout .md-button {
-  width: max-content;
 }
 
 .mf-eyebrow {
@@ -293,16 +228,6 @@ body,
 }
 
 @media (max-width: 760px) {
-  .md-typeset .md-button {
-    min-height: 2.35rem;
-    padding: 0.55rem 0.8rem;
-    font-size: 0.82rem;
-  }
-
-  .mf-hero__content > p:has(.md-button) {
-    gap: 0.55rem;
-  }
-
   .mf-grid--three,
   .mf-grid--four {
     grid-template-columns: 1fr;
