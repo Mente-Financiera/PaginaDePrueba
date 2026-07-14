@@ -1,14 +1,17 @@
 :root {
   --mf-petrol: #1f4e5f;
-  --mf-green: #1f4e5f;
+  --mf-green: #5e9c76;
   --mf-white: #ffffff;
   --mf-light: #f5f7f8;
   --mf-ink: #17313a;
   --mf-soft-line: rgba(31, 78, 95, 0.14);
+  --mf-petrol-wash: rgba(31, 78, 95, 0.1);
+  --mf-petrol-soft: rgba(31, 78, 95, 0.18);
+  --mf-green-wash: rgba(94, 156, 118, 0.08);
   --md-primary-fg-color: var(--mf-petrol);
   --md-primary-fg-color--light: #2d6b7f;
   --md-primary-fg-color--dark: #143642;
-  --md-accent-fg-color: var(--mf-green);
+  --md-accent-fg-color: var(--mf-petrol);
 }
 
 .md-header__button.md-logo img,
@@ -44,8 +47,8 @@
 }
 
 .md-typeset .md-button--primary {
-  background-color: var(--mf-green);
-  border-color: var(--mf-green);
+  background-color: var(--mf-petrol);
+  border-color: var(--mf-petrol);
   color: #ffffff;
 }
 
@@ -54,8 +57,9 @@
   margin: -1.5rem -1.2rem 0;
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1.2rem, 5vw, 4rem);
   background:
-    radial-gradient(circle at 85% 15%, rgba(94, 156, 118, 0.2), transparent 28rem),
-    linear-gradient(135deg, rgba(245, 247, 248, 0.95), rgba(255, 255, 255, 0.78));
+    radial-gradient(circle at 86% 12%, var(--mf-petrol-soft), transparent 30rem),
+    radial-gradient(circle at 10% 100%, var(--mf-green-wash), transparent 22rem),
+    linear-gradient(135deg, rgba(245, 247, 248, 0.98), rgba(255, 255, 255, 0.86));
   border-bottom: 1px solid var(--mf-soft-line);
 }
 
@@ -100,7 +104,7 @@
 .mf-eyebrow {
   display: inline-flex;
   margin-bottom: 0.4rem;
-  color: var(--mf-green);
+  color: var(--mf-petrol);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -148,9 +152,9 @@
 .mf-plan-card span {
   display: block;
   padding: 0.65rem 0.8rem;
-  border-left: 0.25rem solid var(--mf-green);
+  border-left: 0.25rem solid var(--mf-petrol);
   border-radius: 0.35rem;
-  background: rgba(94, 156, 118, 0.1);
+  background: var(--mf-petrol-wash);
   color: var(--mf-ink);
   font-weight: 700;
 }
@@ -207,15 +211,15 @@
 
 .mf-steps > div {
   padding-left: 1rem;
-  border-left: 0.25rem solid var(--mf-green);
+  border-left: 0.25rem solid var(--mf-petrol);
 }
 
 .mf-callout {
   margin-top: 1.5rem;
   padding: clamp(1.2rem, 3vw, 2rem);
-  border: 1px solid rgba(94, 156, 118, 0.32);
+  border: 1px solid var(--mf-petrol-soft);
   border-radius: 0.5rem;
-  background: linear-gradient(135deg, rgba(94, 156, 118, 0.14), rgba(31, 78, 95, 0.08));
+  background: linear-gradient(135deg, var(--mf-petrol-wash), var(--mf-green-wash));
 }
 
 .mf-summary,
