@@ -29,8 +29,18 @@
 }
 
 .md-typeset .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.65em 1em;
   border-radius: 0.45rem;
   font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  white-space: normal;
 }
 
 .md-typeset .md-button--primary {
@@ -73,11 +83,18 @@
 .mf-hero__content > p:has(.md-button) {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.65rem;
 }
 
 .mf-hero__content > p:has(.md-button) .md-button {
+  flex: 0 0 auto;
+  width: max-content;
   margin: 0;
+}
+
+.mf-callout .md-button {
+  width: max-content;
 }
 
 .mf-eyebrow {
@@ -228,6 +245,16 @@
 }
 
 @media (max-width: 760px) {
+  .md-typeset .md-button {
+    min-height: 2.35rem;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.82rem;
+  }
+
+  .mf-hero__content > p:has(.md-button) {
+    gap: 0.55rem;
+  }
+
   .mf-grid--three,
   .mf-grid--four {
     grid-template-columns: 1fr;
