@@ -119,14 +119,18 @@
 }
 
 .mf-hero__meta span {
-  display: inline-flex;
+  display: inline-block;
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--mf-soft-line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
   color: var(--mf-ink);
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.mf-hero__meta strong {
+  font-weight: 800;
 }
 
 .mf-hero__visual {
